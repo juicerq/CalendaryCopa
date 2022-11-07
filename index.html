@@ -23,18 +23,41 @@
         <label for="">Qual a data?</label>
         <input type="text" maxlength="5" placeholder="00/00" name="" id="date">
         <label for="">Qual o dia?</label>
-        <input type="text" name="" placeholder="Dia da semana" id="day">
+        <input type="text" name="" list="days" placeholder="Dia da semana" id="day">
       </form>
       <form action="" name="addgame">
         <h3>Adicione um jogo novo</h3>
-        <label for="">Qual o Primeiro Time?</label>
-        <input type="text" value="brazil" readonly name="" id="player1">
+        <label for="player1">Qual o Primeiro Time?</label>
+        <input type="text" list="teams" name="" id="player1">
         <label for="">Qual o Horário?</label>
         <input type="time" id="hour">
-        <label for="">Qual o Segundo Time?</label>
-        <input type="text" name="" value="serbia" readonly id="player2">
+        <label for="player2">Qual o Segundo Time?</label>
+        <input type="text" name="" list="teams" id="player2">
       </form>
       <button type="button" onclick="createCard()">Adicionar uma coluna</button>
+
+      <!-- Listas -->
+      <datalist id="teams">
+        <option value="Brazil">
+        <option value="Serbia">
+        <option value="Portugal">
+        <option value="Japan">
+        <option value="Ghana">
+        <option value="Hungary">
+        <option value="Colombia">
+        <option value="Argentina">
+        <option value="Switzerland">
+      </datalist>
+
+      <datalist id="days">
+        <option value="Segunda-Feira">
+        <option value="Terça-Feira">
+        <option value="Quarta-Feira">
+        <option value="Quinta-Feira">
+        <option value="Sexta-Feira">
+        <option value="Sábado">
+        <option value="Domingo">
+      </datalist>
     </aside>
 
     <main id="cards">

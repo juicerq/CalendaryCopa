@@ -159,6 +159,7 @@ aside form input{
   border: 1px solid #f7dd43;
   border-radius: 6px;
   color: #f7dd43;
+  outline: none;
 }
 
 aside form label{
