@@ -18,9 +18,23 @@
     </header>
 
     <aside>
-      <button type="button" 
-      >Adicionar uma coluna
-      </button>
+      <form action="" name="addcolumn">
+        <h3>Adicione um card novo</h3>
+        <label for="">Qual a data?</label>
+        <input type="text" maxlength="5" placeholder="00/00" name="" id="date">
+        <label for="">Qual o dia?</label>
+        <input type="text" name="" placeholder="Dia da semana" id="day">
+      </form>
+      <form action="" name="addgame">
+        <h3>Adicione um jogo novo</h3>
+        <label for="">Qual o Primeiro Time?</label>
+        <input type="text" value="brazil" readonly name="" id="player1">
+        <label for="">Qual o Horário?</label>
+        <input type="time" id="hour">
+        <label for="">Qual o Segundo Time?</label>
+        <input type="text" name="" value="serbia" readonly id="player2">
+      </form>
+      <button type="button" onclick="createCard()">Adicionar uma coluna</button>
     </aside>
 
     <main id="cards">

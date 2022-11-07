@@ -121,9 +121,60 @@ header img:hover{
 }
 
 aside {
+  background-color: #1D1C19;
   position: absolute;
-  border: 1px solid red;
-  left: 0%;
-  height: 300px;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 5px auto;
+  border-bottom: 2px solid #f7dd43;
+}
 
+aside form{
+  color:#f7dd43;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+aside form h3{
+  font-size: 24px;
+  padding: 10px;
+}
+
+aside form + form{
+  margin-top: 10px;
+  border-top: 1px solid #323238;
+}
+
+aside form input{
+  width: 150px;
+  background: none;
+  padding: 2px;
+  border: 1px solid #f7dd43;
+  border-radius: 6px;
+  color: #f7dd43;
+}
+
+aside form label{
+  font-size: 14px;
+}
+
+aside button {
+  margin: 15px 0px;
+  background-color: #f7dd43;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 5px;
+  color: #1D1C19;
+  cursor: pointer;
+}
+
+aside button:hover{
+  transform: scale(1.025);
 }
